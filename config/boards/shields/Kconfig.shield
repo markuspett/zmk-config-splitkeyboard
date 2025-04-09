@@ -1,0 +1,5 @@
+config SHIELD_pinksplit_LEFT
+    def_bool $(shields_list_contains,pinksplit_left)
+
+config SHIELD_pinksplit_RIGHT
+    def_bool $(shields_list_contains,pinksplit_right)
