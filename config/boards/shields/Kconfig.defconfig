@@ -1,14 +1,14 @@
-if SHIELD_splitkeyboard_LEFT
+if SHIELD_SPLITKEYBOARD_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "splitkeyboard"
+    default "Splitkeyboard"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_splitkeyboard_LEFT || SHIELD_splitkeyboard_RIGHT
+if SHIELD_SPLITKEYBOARD_LEFT || SHIELD_SPLITKEYBOARD_RIGHT
 
 config ZMK_SPLIT
     default y

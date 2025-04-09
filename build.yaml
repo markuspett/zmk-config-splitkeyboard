@@ -22,6 +22,6 @@ include:
   - board: nice_nano_v2
     shield: splitkeyboard_left
   - board: nice_nano_v2
-    shield: splitkeyvoard_right
+    shield: splitkeyboard_right
   - board: nice_nano_v2
     shield: settings_reset
