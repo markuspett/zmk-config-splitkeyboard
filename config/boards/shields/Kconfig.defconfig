@@ -1,14 +1,14 @@
-if SHIELD_8-D_LEFT
+if SHIELD_splitkeyboard_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "pinksplit"
+    default "splitkeyboard"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_8-D_LEFT || SHIELD_8-D_RIGHT
+if SHIELD_splitkeyboard_LEFT || SHIELD_splitkeyboard_RIGHT
 
 config ZMK_SPLIT
     default y
