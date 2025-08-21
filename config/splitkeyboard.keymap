@@ -18,14 +18,21 @@
 / {
     keymap {
         compatible = "zmk,keymap";
+// ---------------------------------------------------------------------------------
+// | ESC |   `  |  1  |  2  |  3  |  4  |  5  |     |  6  |  7  |  8  |  9  |  0  | BKSP | BKSP |
+// | E   |  TAB |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U  |  I  |  O  |  P  |  Å   | ENT  |
+// | x   | CAPS |  A  |  S  |  D  |  F  |  G  |     |  H  |  J  |  K  |  L  |  Ø  |  Æ   | -    |
+// | x   | SHFT |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  -  |  UP  | SHIFT|
+// | x   | x    | CTR | OPT | CMD | LOW | SPC |     | SPC | LOW | CMD | OPT |LEFT | DOWN | RIGHT|
+
 
         default_layer {
             bindings = <
-&mt ESC SINGLE_QUOTE  &kp N1     &kp N1     &kp N2    &kp N3    &kp N4         &kp N5         &kp SE_LBKT  &kp N7         &kp N8     &kp N9    &kp N0     &kp APOS  &mt DELETE BACKSPACE
-&kp E                 &kp TAB    &kp Q      &kp W     &kp W     &kp R          &kp T          &kp Y        &kp U          &kp I      &kp O     &kp P      &kp LBKT  &kp ENTER
-&bt BT_SEL 0          &kp CAPS   &kp A      &kp S     &kp D     &kp F          &kp G          &kp H        &kp J          &kp K      &kp L     &kp SEMI   &kp APOS  &kp MINUS
-&bt BT_SEL 1          &kp LSHFT  &kp Z      &kp X     &kp C     &kp V          &kp B          &kp N        &kp M          &kp COMMA  &kp DOT   &kp MINUS  &kp UP    &kp RIGHT
-&trans                &kp UP     &kp LCTRL  &kp LALT  &kp LGUI  &mo LOWER      &lt 1 SPACE    &lt 1 SPACE  &mo RAISE      &kp RGUI   &kp RALT  &kp LEFT   &kp DOWN  &kp RIGHT
+&mt ESC SINGLE_QUOTE  &kp SE_APOS  &kp SE_N1     &kp SE_N2    &kp SE_N3    &kp SE_N4         &kp SE_N5         &kp SE_N6       &kp SE_N7         &kp SE_N8     &kp SE_N9    &kp SE_N0       &kp DELETE BACKSPACE  &kp DELETE BACKSPACE
+&kp SE_E              &kp TAB      &kp SE_Q      &kp SE_W     &kp SE_W     &kp SE_R          &kp SE_T          &kp SE_Y        &kp SE_U          &kp SE_I      &kp SE_O     &kp SE_P        &kp SE_A_RING         &kp ENTER
+&bt BT_SEL 0          &kp CAPS     &kp SE_A      &kp SE_S     &kp SE_D     &kp SE_F          &kp SE_G          &kp SE_H        &kp SE_J          &kp SE_K      &kp SE_L     &kp SE_O_SLASH  &kp SE_AE             &kp MINUS
+&bt BT_SEL 1          &kp LSHFT    &kp SE_Z      &kp SE_X     &kp SE_C     &kp SE_V          &kp SE_B          &kp SE_N        &kp SE_M          &kp SE_COMMA  &kp SE_DOT   &kp MINUS       &kp UP                &kp RIGHT
+&bt BT_SEL 2          &trans       &kp LCTRL     &kp LALT     &kp LGUI     &mo LOWER         &lt 1 SPACE       &lt 1 SPACE     &mo RAISE         &kp RGUI      &kp RALT     &kp LEFT        &kp DOWN              &kp RIGHT
             >;
         };
 
