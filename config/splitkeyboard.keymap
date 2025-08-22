@@ -12,7 +12,7 @@
 
 
 #define DEFAULT 0
-#define LOWER   1
+#define SYMBOL  1
 #define RAISE   2
 
 / {
@@ -30,24 +30,25 @@
             bindings = <
 &mt ESC SINGLE_QUOTE  &kp SE_APOS  &kp SE_N1     &kp SE_N2    &kp SE_N3    &kp SE_N4         &kp SE_N5         &kp SE_N6       &kp SE_N7         &kp SE_N8     &kp SE_N9    &kp SE_N0       &trans                &kp BSPC
 &kp SE_E              &kp TAB      &kp SE_Q      &kp SE_W     &kp SE_W     &kp SE_R          &kp SE_T          &kp SE_Y        &kp SE_U          &kp SE_I      &kp SE_O     &kp SE_P        &kp SE_A_RING         &kp ENTER
-&bt BT_SEL 0          &kp CAPS     &kp SE_A      &kp SE_S     &kp SE_D     &kp SE_F          &kp SE_G          &kp SE_H        &kp SE_J          &kp SE_K      &kp SE_L     &kp SE_O_SLASH  &kp SE_AE             &kp SE_MINUS
-&bt BT_SEL 1          &kp LSHFT    &kp SE_Z      &kp SE_X     &kp SE_C     &kp SE_V          &kp SE_B          &kp SE_N        &kp SE_M          &kp SE_COMMA  &kp SE_DOT   &kp SE_MINUS    &kp UP                &kp RIGHT
-&bt BT_SEL 2          &trans       &kp LCTRL     &kp LALT     &kp SPACE    &mo LOWER         &mo LOWER         &kp SPACE       &mo RAISE         &kp RGUI      &kp RALT     &kp LEFT        &kp DOWN              &kp RIGHT
+&trans                &kp CAPS     &kp SE_A      &kp SE_S     &kp SE_D     &kp SE_F          &kp SE_G          &kp SE_H        &kp SE_J          &kp SE_K      &kp SE_L     &kp SE_O_SLASH  &kp SE_AE             &kp SE_MINUS
+&trans                &kp LSHFT    &kp SE_Z      &kp SE_X     &kp SE_C     &kp SE_V          &kp SE_B          &kp SE_N        &kp SE_M          &kp SE_COMMA  &kp SE_DOT   &kp SE_MINUS    &kp UP                &kp RIGHT
+&trans                &trans       &kp LCTRL     &kp LALT     &kp SPACE    &mo SYMBOL        &mo SYMBOL        &kp SPACE       &mo RAISE         &kp RGUI      &kp RALT     &kp LEFT        &kp DOWN              &kp RIGHT
             >;
         };
 // ---------------------------------------------------------------------------------
 // |     |      |  f1 |  f2 |  f3 | f4  |  f5 |     |  f6 |  f7 |  f8 |  f9 |  f10| f11  | f12  |
-// |     |      |  ~  |  $  |  @  |  ^  |  !  | +   |     |  {  |  }  |  "  |  '  |      |      |
+// |  ^  |      |  ~  |  $  |  @  |  ^  |  !  | +   |     |  {  |  }  |  "  |  '  |      |      |
 // |     |      |  ´  |  %  |  &  |  =  |  _  | -   |     |  (  |  )  |  <  |  >  |      |      |
 // |     |      |  `  |  #  |  |  |  /  |  \  | *   |     |  [  |  ]  |  ?  |     |      |      |
 // |     |      |     |     |     |     |     |     |     |     |     |     |     |      |      |
 
         symbol_layer {
             bindings = <
-&trans  &trans  &trans         &trans         &trans             &trans     &trans    &trans  &kp LESS_THAN         &kp GREATER_THAN       &trans          &trans           &trans  &trans
-&trans  &trans  &trans         &kp BACKSLASH  &kp PIPE           &kp SLASH  &trans    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK    &kp TILDE        &trans  &trans
-&trans  &trans  &kp SEMICOLON  &kp COLON      &kp DOUBLE_QUOTES  &kp SQT    &trans    &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans
-&trans  &trans  &trans         &trans         &trans             &trans     &trans    &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON   &kp COLON        &trans  &trans
+&bt BT_SEL 3  &bt BT_SEL 4  &kp F1        &kp F2         &kp F3.       &kp F4.        &kp F5         &kp none       &kp F6  &kp F7       &kp F8       &kp F9       &kp F10      &kp F11   &kp F12
+&kp SE_CARET  &none         &kp SE_TILDE  &kp SE_DOLLAR  &kp SE_AT     &kp SE_CARET   &kp SE_EXCL    &kp SE_PLUS    &none   &kp SE_LBRC  &kp SE_RBRC  &kp SE_DQT   &kp SE_SQT   &none     &none
+&bt BT_SEL 2  &none         &kp SE_ACUTE  &kp SE_PERCENT &kp SE_AMPS   &kp SE_EQUAL   &kp SE_UNDER   &kp SE_MINUS   &none   &kp SE_LPAR  &kp SE_RPAR  &kp SE_LT    &kp SE_GT    &none     &none
+&bt BT_SEL 1  &none         &kp SE_GRAVE  &kp SE_HASH    &kp SE_PIPE   &kp SE_SLASH   &kp SE_BSLH    &kp SE_STAR    &none   &kp SE_LBKT  &kp SE_RBKT  &kp SE_QMARK &none        &none     &none
+&bt BT_SEL 0  &none         &none         &none          &none         &none.         &none          &none          &none   &none        &none        &none        &none        &none     &none
             >;
         };
 
