@@ -23,7 +23,7 @@
 // | E   |  TAB |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U  |  I  |  O  |  P  |  Å   | ENT  |
 // | x   | CAPS |  A  |  S  |  D  |  F  |  G  |     |  H  |  J  |  K  |  L  |  Ø  |  Æ   | -    |
 // | x   | SHFT |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  -  |  UP  | SHIFT|
-// | x   | x    | CTR | OPT | CMD | LOW | SPC |     | SPC | LOW | CMD | OPT |LEFT | DOWN | RIGHT|
+// | x   | x    | CTR | OPT | CMD | SPC | LOW |     | LOW | SPC | CMD | OPT |LEFT | DOWN | RIGHT|
 
 
         default_layer {
@@ -32,9 +32,15 @@
 &kp SE_E              &kp TAB      &kp SE_Q      &kp SE_W     &kp SE_W     &kp SE_R          &kp SE_T          &kp SE_Y        &kp SE_U          &kp SE_I      &kp SE_O     &kp SE_P        &kp SE_A_RING         &kp ENTER
 &bt BT_SEL 0          &kp CAPS     &kp SE_A      &kp SE_S     &kp SE_D     &kp SE_F          &kp SE_G          &kp SE_H        &kp SE_J          &kp SE_K      &kp SE_L     &kp SE_O_SLASH  &kp SE_AE             &kp SE_MINUS
 &bt BT_SEL 1          &kp LSHFT    &kp SE_Z      &kp SE_X     &kp SE_C     &kp SE_V          &kp SE_B          &kp SE_N        &kp SE_M          &kp SE_COMMA  &kp SE_DOT   &kp SE_MINUS    &kp UP                &kp RIGHT
-&bt BT_SEL 2          &trans       &kp LCTRL     &kp LALT     &kp LGUI     &mo LOWER         &kp SPACE         &kp SPACE       &mo RAISE         &kp RGUI      &kp RALT     &kp LEFT        &kp DOWN              &kp RIGHT
+&bt BT_SEL 2          &trans       &kp LCTRL     &kp LALT     &kp SPACE    &mo LOWER         &mo LOWER         &kp SPACE       &mo RAISE         &kp RGUI      &kp RALT     &kp LEFT        &kp DOWN              &kp RIGHT
             >;
         };
+// ---------------------------------------------------------------------------------
+// |     |      |  f1 |  f2 |  f3 | f4  |  f5 |     |  f6 |  f7 |  f8 |  f9 |  f10| f11  | f12  |
+// |     |      |  ~  |  $  |  @  |  ^  |  !  | +   |     |  {  |  }  |  "  |  '  |      |      |
+// |     |      |  ´  |  %  |  &  |  =  |  _  | -   |     |  (  |  )  |  <  |  >  |      |      |
+// |     |      |  `  |  #  |  |  |  /  |  \  | *   |     |  [  |  ]  |  ?  |     |      |      |
+// |     |      |     |     |     |     |     |     |     |     |     |     |     |      |      |
 
         symbol_layer {
             bindings = <
