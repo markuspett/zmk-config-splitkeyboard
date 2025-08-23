@@ -29,11 +29,11 @@
 
         default_layer {
             bindings = <
-&kp ESC       &kp SE_APOS  &kp N1        &kp SE_N2    &kp SE_N3    &kp SE_N4         &kp SE_N5         &kp SE_N6       &kp SE_N7         &kp SE_N8     &kp SE_N9    &kp SE_N0       &trans                &kp BSPC
-&kp SE_E      &kp TAB      &kp SV_Q      &kp SV_W     &kp SE_W     &kp SE_R          &kp SE_T          &kp SV_Y        &kp SE_U          &kp SE_I      &kp SE_O     &kp SE_P        &kp SE_A_RING         &kp ENTER
-&trans        &kp CAPS     &kp SE_A      &kp SE_S     &kp SE_D     &kp SE_F          &kp SE_G          &kp SE_H        &kp SE_J          &kp SE_K      &kp SE_L     &kp SE_O_SLASH  &kp SE_AE             &kp SE_MINUS
-&trans        &kp LSHFT    &kp SE_Z      &kp SV_X     &kp SE_C     &kp SE_V          &kp SE_B          &kp SE_N        &kp SE_M          &kp SE_COMMA  &kp SE_DOT   &kp SE_MINUS    &kp UP                &kp RIGHT
-&trans        &trans       &kp LCTRL     &kp LALT     &kp LGUI     &kp SPACE         &mo SYMBOL        &mo SYMBOL      &kp SPACE         &kp RGUI      &kp RALT     &kp LEFT        &kp DOWN              &kp RIGHT
+&kp ESC       &kp SE_APOS  &kp N1        &kp SE_N2    &kp SE_N3    &kp SE_N4         &kp SE_N5         &kp SE_N6       &kp SE_N7         &kp SE_N8     &kp SE_N9    &kp SE_N0       &trans               &kp BSPC
+&kp SE_E      &kp TAB      &kp SV_Q      &kp SV_W     &kp SE_W     &kp SE_R          &kp SE_T          &kp SV_Y        &kp SE_U          &kp SE_I      &kp SE_O     &kp SE_P        &kp SE_A_RING        &kp ENTER
+&trans        &kp CAPS     &kp SE_A      &kp SE_S     &kp SE_D     &kp SE_F          &kp SE_G          &kp SE_H        &kp SE_J          &kp SE_K      &kp SE_L     &kp SE_O_SLASH  &kp SE_AE            &kp SE_MINUS
+&trans        &kp LSHFT    &kp SE_Z      &kp SV_X     &kp SE_C     &kp SE_V          &kp SE_B          &kp SE_N        &kp SE_M          &kp SE_COMMA  &kp SE_DOT   &kp SE_MINUS    &kp UP               &kp RIGHT
+&trans        &trans       &kp LCTRL     &kp LALT     &kp LGUI     &kp SPACE         &mo SYMBOL        &mo SYMBOL      &kp SPACE         &kp RGUI      &kp RALT     &kp LEFT        &kp DOWN             &kp RIGHT
             >;
         };
 // ---------------------------------------------------------------------------------
