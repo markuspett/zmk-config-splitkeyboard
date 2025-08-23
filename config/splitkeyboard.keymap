@@ -46,7 +46,7 @@
         symbol_layer {
             bindings = <
 &bt BT_SEL 3        &bt BT_SEL 4 &kp F1         &kp F2         &kp F3        &kp F4        &kp F5                &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&kp SE_CARET        &none        &kp SV_DOLLAR  &kp SV_AT      &kp SV_CARET  &kp SE_EXCL   &kp SE_PLUS           &kp SV_LBRC   &kp SV_LBRC   &kp SV_RBRC   &kp SE_DQT    &kp SE_SQT    &kp SE_TILDE  &none
+&kp SV_CARET        &none        &kp SV_DOLLAR  &kp SV_AT      &kp SV_CARET  &kp SE_EXCL   &kp SE_PLUS           &none.        &kp SV_LBRC   &kp SV_RBRC   &kp SE_DQT    &kp SE_SQT    &kp SE_TILDE  &none
 &bt BT_SEL 2        &none        &kp SE_PERCENT &kp SE_AMPS    &kp SE_EQUAL  &kp SE_UNDER  &kp SE_MINUS          &none         &kp SE_LPAR   &kp SE_RPAR   &kp SV_LT     &kp SV_GT     &kp SE_ACUTE  &none
 &bt BT_SEL 1        &none        &kp SE_HASH    &kp SV_PIPE    &kp SE_SLASH  &kp SV_BSLH   &kp SV_STAR           &none         &kp SE_LBKT   &kp SE_RBKT   &kp SE_QMARK  &none         &kp SE_GRAVE  &none
 &bt BT_SEL 0        &none        &none          &none          &none         &none         &none                 &none         &none         &none         &none         &none         &none         &none 
