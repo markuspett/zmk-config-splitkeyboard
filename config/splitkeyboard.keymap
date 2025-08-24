@@ -45,16 +45,16 @@
 
         symbol_layer1 {
             bindings = <
-&bt BT_SEL 3        &bt BT_SEL 4 &kp F1         &kp F2         &kp F3        &kp F4        &kp F5                &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&kp SV_CARET        &none        &kp SV_DOLLAR  &kp SV_AT      &kp SV_CARET  &kp SE_EXCL   &kp SE_PLUS           &none         &kp SV_LBRC   &kp SV_RBRC   &kp SE_DQT    &kp SE_SQT    &kp SE_TILDE  &none
-&bt BT_SEL 2        &none        &kp SE_PERCENT &kp SE_AMPS    &kp SE_EQUAL  &kp SE_UNDER  &kp SE_MINUS          &none         &kp SE_LPAR   &kp SE_RPAR   &kp SV_LT     &kp SV_GT     &kp SE_ACUTE  &none
-&bt BT_SEL 1        &none        &kp SE_HASH    &kp SV_PIPE    &kp SE_SLASH  &kp SV_BSLH   &kp SV_STAR           &none         &kp SE_LBKT   &kp SE_RBKT   &kp SE_QMARK  &none         &kp SE_GRAVE  &none
-&bt BT_SEL 0        &none        &none          &none          &none         &none         &none                 &none         &none         &none         &none         &none         &none         &none 
-            >;
+&none        &none        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5            &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+&none        &none        &none      &kp N7     &kp N8     &kp N9     &none             &none         &kp SV_LBRC   &kp SV_RBRC   &kp SE_DQT    &kp SE_SQT    &kp SE_TILDE  &none
+&none        &none        &none      &kp N4     &kp N5     &kp N6     &none             &none         &kp SE_LPAR   &kp SE_RPAR   &kp SV_LT     &kp SV_GT     &kp SE_ACUTE  &none
+&none        &none        &kp N0     &kp N1     &kp N2     &kp N3     &none             &none         &kp SE_LBKT   &kp SE_RBKT   &kp SE_QMARK  &none         &kp SE_GRAVE  &none
+&none        &none        &kp LCTR   &kp LALT   &LGUI      &kp SPACE  &none             &none         &none         &none         &none         &none         &none         &none 
+            >; 
         };
 
 // ---------------------------------------------------------------------------------
-// | bt4 | bt5  |  f1 |  f2 |  f3 | f4  |  f5 |        |   F6  |  f7 |  f8 |  f9 |  f10| f11  | f12  |
+// | bt4 |      |  f1 |  f2 |  f3 | f4  |  f5 |        |   F6  |  f7 |  f8 |  f9 |  f10| f11  | f12  |
 // | bt3 |      |  $  |  @  |  ^  |  !  |  +  |        |       |     |     |     |     |      |      |
 // | bt2 |      |  %  |  &  |  =  |  _  |  -  |        |       |LEFT |DOWN | UP  |RIGHT|      |      |
 // | bt1 |      |  #  |  |  |  /  |  \  |  *  |        |       |     |     |     |     |      |      |
@@ -63,10 +63,11 @@
 
         symbol_layer2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &trans           &trans           &trans         &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans           &kp SLASH        &kp ASTERISK     &kp BACKSPACE  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS      &trans  &trans
-&kp X  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS       &trans  &trans
+&bt BT_SEL 4        &none        &kp F1         &kp F2         &kp F3        &kp F4        &kp F5                &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+&bt BT_SEL 3        &none        &kp SV_DOLLAR  &kp SV_AT      &kp SV_CARET  &kp SE_EXCL   &kp SE_PLUS           &none         &kp SV_LBRC   &kp SV_RBRC   &kp SE_DQT    &kp SE_SQT    &kp SE_TILDE  &none
+&bt BT_SEL 2        &none        &kp SE_PERCENT &kp SE_AMPS    &kp SE_EQUAL  &kp SE_UNDER  &kp SE_MINUS          &none         &kp SE_LPAR   &kp SE_RPAR   &kp SV_LT     &kp SV_GT     &kp SE_ACUTE  &none
+&bt BT_SEL 1        &none        &kp SE_HASH    &kp SV_PIPE    &kp SE_SLASH  &kp SV_BSLH   &kp SV_STAR           &none         &kp SE_LBKT   &kp SE_RBKT   &kp SE_QMARK  &none         &kp SE_GRAVE  &none
+&bt BT_SEL 0        &none        &none          &none          &none         &none         &none                 &none         &none         &none         &none         &none         &none         &none 
             >;
         };
     };
