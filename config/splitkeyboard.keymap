@@ -17,8 +17,8 @@
 #define SYMBOL_M 1
 #define SYMBOL2_M 2
 #define DEFAULT_WIN 3
-#define SYMBOL_W
-#define SYMBOL2_W
+#define SYMBOL_W 4
+#define SYMBOL2_W 5
 
 / {
     keymap {
