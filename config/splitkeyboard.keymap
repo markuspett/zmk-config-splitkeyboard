@@ -83,15 +83,7 @@
 // | x   | x    | CTR | GUI | ALT | SPC | LOW |     | LOW | SPC | CMD | OPT |LEFT | DOWN | RIGHT|
 
 
-        default_layer_win {
-            bindings = <
-&kp ESC              &kp wno_APOS  &kp N1        &kp wno_N2    &kp wno_N3    &kp wno_N4         &kp wno_N5         &kp wno_N6       &kp wno_N7         &kp wno_N8     &kp wno_N9    &kp wno_N0       &kp BSPC             &kp BSPC
-&trans               &kp TAB      &kp wno_Q      &kp wno_W     &kp wno_E     &kp wno_R          &kp wno_T          &kp wno_Y        &kp wno_U          &kp wno_I      &kp wno_O     &kp wno_P        &kp wno_A_RING       &kp ENTER
-&trans               &kp CAPS     &kp wno_A      &kp wno_S     &kp wno_D     &kp wno_F          &kp wno_G          &kp wno_H        &kp wno_J          &kp wno_K      &kp wno_L     &kp wno_O_SLASH  &kp wno_AE           &none
-&trans               &kp LSHFT    &kp wno_Z      &kp wno_X     &kp wno_C     &kp wno_V          &kp wno_B          &kp wno_N        &kp wno_M          &kp wno_COMMA  &kp wno_DOT   &kp wno_MINUS    &kp RSHFT            &kp UP
-&trans               &trans       &kp LCTRL      &kp LGUI      &kp LALT      &kp SPACE          &mo SYMBOL_W       &mo SYMBOL2_W    &kp SPACE          &kp RALT       &kp LCTRL     &kp LEFT         &kp DOWN             &kp RIGHT            >;
-        }; 
-
+  
 
 // ---------------------------------------------------------------------------------
 // |     |      |  f1 |  f2 |  f3 | f4  |  f5 |        |   F6  |  f7 |  f8 |  f9 |  f10| f11  | f12  |
@@ -100,14 +92,7 @@
 // |     |      |  0  |  1  |  2  |  3  |     |        |       |  [  |  ]  |  ?  |  ¨  |   `  |      |
 // |     |      | ctrl| gui | alt | spc |     |        |       |  spc| ralt| ctrl|     |      |      |
 
-        symbol_layer1_win {
-            bindings = <
-&none        &none        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5            &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&none        &none        &none      &kp N7     &kp N8     &kp N9     &none             &none         &kp wno_LBRC  &kp wno_RBRC  &kp wno_DQT   &kp wno_SQT   &kp wno_TILDE &none
-&none        &none        &none      &kp N4     &kp N5     &kp N6     &none             &none         &kp wno_LPAR  &kp wno_RPAR  &kp wno_LT    &kp wno_GT    &kp wno_ACUTE &none
-&none        &none        &kp N0     &kp N1     &kp N2     &kp N3     &none             &none         &kp wno_LBKT  &kp wno_RBKT  &kp wno_QMARK &none         &kp wno_GRAVE &none
-&none        &trans       &kp LCTRL  &kp LGUI   &kp LALT   &kp SPACE  &trans            &trans        &kp SPACE     &kp RALT      &kp LCTRL     &kp LEFT      &kp DOWN      &kp RIGHT            >;
-        };
+ 
 
 
 // ---------------------------------------------------------------------------------
@@ -118,14 +103,7 @@
 // | bt0 |      | ctrl| opt | cmd | spc |     |        |       |  spc| cmd |  opt|     |      |      |
 
 
-        symbol_layer2_win {
-            bindings = <
-&bt BT_SEL 4        &none        &kp F1         &kp F2         &kp F3        &kp F4        &kp F5                &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&bt BT_SEL 3        &none        &kp wno_DOLLAR &kp wno_AT     &kp wno_CARET &kp wno_EXCL  &kp wno_PLUS          &none         &none         &none         &none         &none         &none         &none
-&bt BT_SEL 2        &none        &kp wno_PERCENT&kp wno_AMPS   &kp wno_EQUAL &kp wno_UNDER &kp wno_MINUS         &none         &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none         &none
-&bt BT_SEL 1        &none        &kp wno_HASH   &kp wno_PIPE   &kp wno_SLASH &kp wno_BSLH  &kp wno_STAR          &none         &none         &none         &none         &none         &none         &none
-&bt BT_SEL 0        &trans       &kp LCTRL  &kp LGUI   &kp LALT   &kp SPACE  &trans            &trans        &kp SPACE     &kp RALT      &kp LCTRL     &kp LEFT      &kp DOWN      &kp RIGHT            >;
-        };
+   
 
 
 
