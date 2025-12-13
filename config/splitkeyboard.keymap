@@ -29,7 +29,7 @@
 // | x   | CAPS |  A  |  S  |  D  |  F  |  G  |     |  H  |  J  |  K  |  L  |  Ø  |  Æ   | None |
 // | x   | SHFT |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  -  |SHIFT | UP   |
 // | x   | x    | CTR | OPT | CMD | SPC | LOW |     | LOW | SPC | CMD | OPT |LEFT | DOWN | RIGHT|
-
+//
 
         default_layer_mac {
             bindings = <
