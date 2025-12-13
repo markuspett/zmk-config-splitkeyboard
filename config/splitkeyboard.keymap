@@ -11,6 +11,7 @@
 #include "keys_se.h"
 #include "keys_sv.h"
 #include "keys_win_no.h"
+#include "keys_no_mac.h"
 
 
 #define DEFAULT 0
@@ -24,54 +25,57 @@
     keymap {
         compatible = "zmk,keymap";
 // ---------------------------------------------------------------------------------
-// | ESC |   `  |  1  |  2  |  3  |  4  |  5  |     |  6  |  7  |  8  |  9  |  0  | none | BKSP |
-// | x   |  TAB |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U  |  I  |  O  |  P  |  Å   | ENT  |
-// | x   | CAPS |  A  |  S  |  D  |  F  |  G  |     |  H  |  J  |  K  |  L  |  Ø  |  Æ   | None |
-// | x   | SHFT |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  -  |SHIFT | UP   |
-// | x   | x    | CTR | OPT | CMD | SPC | LOW |     | LOW | SPC | CMD | OPT |LEFT | DOWN | RIGHT|
+// | x   | x    |  x  |  x  |  x  |  x  |  x  |     |  x  |  x  |  x  |  x  |  x  | x    | x    |
+// | x   | TAB  |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U  |  I  |  O  |  P  | bspc | x    |
+// | x   | CAPS |  A  |  S  |  D  |  F  |  G  |     |  H  |  J  |  K  |  L  | ent | ent  | x    |
+// | x   | SHFT |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  -  |      | x    |
+// | x   | x    | CTR | OPT | CMD | SPC | SM  |     | SM2 | SPC | CMD | OPT |     |      | x    |
 
+// har fjerna bspc, esc, æ, ø, å
 
         default_layer_mac {
             bindings = <
-&kp ESC              &kp SE_APOS  &kp N1        &kp SE_N2    &kp SE_N3    &kp SE_N4         &kp SE_N5         &kp SE_N6       &kp SE_N7         &kp SE_N8     &kp SE_N9    &kp SE_N0       &kp BSPC             &kp BSPC
-&trans               &kp TAB      &kp SV_Q      &kp SV_W     &kp SE_E     &kp SE_R          &kp SE_T          &kp SV_Y        &kp SE_U          &kp SE_I      &kp SE_O     &kp SE_P        &kp SE_A_RING        &kp ENTER
-&trans               &kp CAPS     &kp SE_A      &kp SE_S     &kp SE_D     &kp SE_F          &kp SE_G          &kp SE_H        &kp SE_J          &kp SE_K      &kp SE_L     &kp SE_O_SLASH  &kp SE_AE            &none
-&trans               &kp LSHFT    &kp SE_Z      &kp SV_X     &kp SE_C     &kp SE_V          &kp SE_B          &kp SE_N        &kp SE_M          &kp SE_COMMA  &kp SE_DOT   &kp SE_MINUS    &kp RSHFT            &kp UP
-&trans               &trans       &kp LCTRL     &kp LALT     &kp LGUI     &kp SPACE         &mo SYMBOL_M      &mo SYMBOL2_M   &kp SPACE         &kp RGUI      &kp RALT     &kp LEFT        &kp DOWN             &kp RIGHT
+&trans               &trans           &kp trans        &trans       &trans        &trans             &trans            &trans          &trans            &trans         &trans        &trans           &trans           &trans
+&trans               &kp TAB          &kp NOM_Q        &kp NOM_W    &kp NOM_E     &kp NOM_R          &kp NOM_T         &kp NOM_Y       &kp NOM_U         &kp NOM_I      &kp NOM_O     &kp NOM_P        &kp BSPC         &trans
+&trans               &kp CAPS         &mt NOM_AA NOM_A &kp NOM_S    &kp NOM_D     &kp NOM_F          &kp NOM_G         &kp NOM_H       &kp NOM_J         &kp NOM_K      &kp NOM_L     &kp NOM_ENTER    &kp ENTER        &trans
+&trans               &kp LSHFT        &kp NOM_Z        &kp NOM_X    &kp NOM_C     &kp NOM_V          &kp NOM_B         &kp NOM_N       &kp NOM_M         &kp NOM_COMMA  &kp NOM_DOT   &kp NOM_MINUS    &kp RSHFT        &trans
+&trans               &trans           &kp LCTRL        &kp LALT     &kp LGUI      &kp SPACE          &mo SYMBOL_M      &mo SYMBOL2_M   &kp SPACE         &kp RGUI       &kp RALT      &trans           &trans           &trans
             >;
         };
-// ---------------------------------------------------------------------------------
-// |     |      |  f1 |  f2 |  f3 | f4  |  f5 |        |   F6  |  f7 |  f8 |  f9 |  f10| f11  | f12  |
+// ---------------------------------------------------------------------------------------------------
+// |     |      |     |     |     |     |     |        |       |     |     |     |     |      |      |
 // |     |      |     |  7  |  8  |  9  |     |        |       |  {  |  }  |  "  |  '  |  ~   |      |
 // |     |      |     |  4  |  5  |  6  |     |        |       |  (  |  )  |  <  |  >  |  ´   |      |
 // |     |      |  0  |  1  |  2  |  3  |     |        |       |  [  |  ]  |  ?  |  ¨  |   `  |      |
-// |     |      | ctrl| opt | cmd | spc |     |        |       |  spc| cmd |  opt|     |      |      |
+// |     |      |     |     |     |     |     |        |       |     |     |     |     |      |      |
 
+// fjerna fkeys
         symbol_layer1_mac {
             bindings = <
-&none        &none        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5            &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&none        &none        &none      &kp N7     &kp N8     &kp N9     &none             &none         &kp SV_LBRC   &kp SV_RBRC   &kp SE_DQT    &kp SE_SQT    &kp SE_TILDE  &none
-&none        &none        &none      &kp N4     &kp N5     &kp N6     &none             &none         &kp SE_LPAR   &kp SE_RPAR   &kp SV_LT     &kp SV_GT     &kp SE_ACUTE  &none
-&none        &none        &kp N0     &kp N1     &kp N2     &kp N3     &none             &none         &kp SE_LBKT   &kp SE_RBKT   &kp SE_QMARK  &none         &kp SE_GRAVE  &none
-&none        &none        &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &trans            &trans        &kp SPACE     &none         &none         &none         &none         &none 
-            >; 
+&trans        &trans        &trans        &trans         &trans     &trans         &trans             &trans         &trans        &trans         &trans          &trans         &trans         &trans
+&trans        &trans        &trans        &kp NOM_N7     &kp NOM_N8 &kp NOM_N9     &trans             &trans         &kp NOM_LBRC  &kp NOM_RBRC   &kp NOM_DQT     &kp NOM_SQT    &kp NOM_TILDE  &trans
+&trans        &trans        &trans        &kp NOM_N4     &kp NOM_N5 &kp NOM_N6     &trans             &trans         &kp NOM_LPAR   &kp NOM_RPAR  &kp NOM_LT      &kp NOM_GT     &kp NOM_ACUTE  &trans
+&trans        &trans        &kp NOM_N0    &kp NOM_N1     &kp NOM_N2 &kp NOM_N3     &trans             &trans         &kp NOM_LBKT  &kp NOM_RBKT   &kp NOM_QMARK   &trans         &kp NOM_GRAVE  &trans
+&trans        &trans        &trans        &trans         &trans     &trans         &trans             &trans         &trans        &trans         &trans          &trans         &trans         &trans 
+            >;  
         };
 
 // ---------------------------------------------------------------------------------
-// | bt4 |      |  f1 |  f2 |  f3 | f4  |  f5 |        |   F6  |  f7 |  f8 |  f9 |  f10| f11  | f12  |
-// | bt3 |      |  $  |  @  |  ^  |  !  |  +  |        |       |     |     |     |     |      |      |
-// | bt2 |      |  %  |  &  |  =  |  _  |  -  |        |       |LEFT |DOWN | UP  |RIGHT|      |      |
-// | bt1 |      |  #  |  |  |  /  |  \  |  *  |        |       |     |     |     |     |      |      |
-// | bt0 |      | ctrl| opt | cmd | spc |     |        |       |  spc| cmd |  opt|     |      |      |
+// |     |      |     |     |     |     |     |        |       |     |     |     |     |      |      |
+// |     | bt3  |  $  |  @  |  ^  |  !  |  +  |        |       |  f1 |  f2 |  f3 |  f4 |      |      |
+// |     | bt2  |  %  |  &  |  =  |  _  |  -  |        |       |LEFT |DOWN | UP  |RIGHT|      |      |
+// |     | bt1  |  #  |  |  |  /  |  \  |  *  |        |       |  f6 |  f7 | f8  | f9  | f10  |      |
+// |     | bt0  |     |     |     |     |     |        |       |     |     |     | f11 | f12  |      |
+
 
 
         symbol_layer2 {
             bindings = <
-&bt BT_SEL 4        &none        &kp F1         &kp F2         &kp F3        &kp F4        &kp F5                &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&bt BT_SEL 3        &none        &kp SV_DOLLAR  &kp SV_AT      &kp SV_CARET  &kp SE_EXCL   &kp SE_PLUS           &none         &none         &none         &none         &none         &none         &none
-&bt BT_SEL 2        &none        &kp SE_PERCENT &kp SE_AMPS    &kp SE_EQUAL  &kp SE_UNDER  &kp SE_MINUS          &none         &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none         &none
-&bt BT_SEL 1        &none        &kp SE_HASH    &kp SV_PIPE    &kp SE_SLASH  &kp SV_BSLH   &kp SV_STAR           &none         &none         &none         &none         &none         &none         &none
-&bt BT_SEL 0        &none        &kp LCTRL      &kp LALT       &kp LGUI      &kp SPACE     &trans                &trans        &kp RGUI      &kp RALT      &none         &none         &none         &none 
+&trans  &trans           &trans          &trans         &trans        &trans        &trans                &trans        &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &bt BT_SEL 3     &kp NOM_DOLLAR  &kp SV_AT      &kp SV_CARET  &kp SE_EXCL   &kp SE_PLUS           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &trans        &none
+&trans  &bt BT_SEL 2     &kp SE_PERCENT  &kp SE_AMPS    &kp SE_EQUAL  &kp SE_UNDER  &kp SE_MINUS          &kp F6        &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &none
+&trans  &bt BT_SEL 1     &kp SE_HASH     &kp SV_PIPE    &kp SE_SLASH  &kp SV_BSLH   &kp SV_STAR           &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &trans        &none
+&trans  &bt BT_SEL 0     &trans          &trans         &trans        &trans        &trans                &trans        &trans        &trans        &trans        &kp F12       &trans        &none 
             >;
         };
 
