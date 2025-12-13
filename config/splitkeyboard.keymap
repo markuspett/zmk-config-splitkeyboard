@@ -35,11 +35,11 @@
 
         default_layer_mac {
             bindings = <
-&trans               &trans           &kp trans        &trans       &trans        &trans             &trans            &trans          &trans            &trans         &trans        &trans           &trans           &trans
-&trans               &kp TAB          &kp NOM_Q        &kp NOM_W    &kp NOM_E     &kp NOM_R          &kp NOM_T         &kp NOM_Y       &kp NOM_U         &kp NOM_I      &kp NOM_O     &kp NOM_P        &kp BSPC         &trans
-&trans               &kp CAPS         &mt NOM_AA NOM_A &kp NOM_S    &kp NOM_D     &kp NOM_F          &kp NOM_G         &kp NOM_H       &kp NOM_J         &kp NOM_K      &kp NOM_L     &kp NOM_ENTER    &kp ENTER        &trans
-&trans               &kp LSHFT        &kp NOM_Z        &kp NOM_X    &kp NOM_C     &kp NOM_V          &kp NOM_B         &kp NOM_N       &kp NOM_M         &kp NOM_COMMA  &kp NOM_DOT   &kp NOM_MINUS    &kp RSHFT        &trans
-&trans               &trans           &kp LCTRL        &kp LALT     &kp LGUI      &kp SPACE          &mo SYMBOL_M      &mo SYMBOL2_M   &kp SPACE         &kp RGUI       &kp RALT      &trans           &trans           &trans
+&trans               &trans           &trans                  &trans       &trans        &trans             &trans            &trans          &trans            &trans         &trans        &trans           &trans           &trans
+&trans               &kp TAB          &kp NOM_Q               &kp NOM_W    &kp NOM_E     &kp NOM_R          &kp NOM_T         &kp NOM_Y       &kp NOM_U         &kp NOM_I      &kp NOM_O     &kp NOM_P        &kp BSPC         &trans
+&trans               &kp CAPS         &kp NOM_A               &kp NOM_S    &kp NOM_D     &kp NOM_F          &kp NOM_G         &kp NOM_H       &kp NOM_J         &kp NOM_K      &kp NOM_L     &kp NOM_ENTER    &kp ENTER        &trans
+&trans               &kp LSHFT        &kp NOM_Z               &kp NOM_X    &kp NOM_C     &kp NOM_V          &kp NOM_B         &kp NOM_N       &kp NOM_M         &kp NOM_COMMA  &kp NOM_DOT   &kp NOM_MINUS    &kp RSHFT        &trans
+&trans               &trans           &kp LCTRL               &kp LALT     &kp LGUI      &kp SPACE          &mo SYMBOL_M      &mo SYMBOL2_M   &kp SPACE         &kp RGUI       &kp RALT      &trans           &trans           &trans
             >;
         };
 // ---------------------------------------------------------------------------------------------------
