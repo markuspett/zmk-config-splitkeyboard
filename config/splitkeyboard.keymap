@@ -10,6 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include "keys_se.h"
 #include "keys_sv.h"
+#include "keys_no_mac.h"
 
 
 #define DEFAULT 0
@@ -30,9 +31,9 @@
         default_layer {
             bindings = <
 &kp ESC              &kp SE_APOS  &kp N1        &kp SE_N2    &kp SE_N3    &kp SE_N4         &kp SE_N5         &kp SE_N6       &kp SE_N7         &kp SE_N8     &kp SE_N9    &kp SE_N0       &kp BSPC             &kp BSPC
-&trans               &kp TAB      &kp SV_Q      &kp SV_W     &kp SE_E     &kp SE_R          &kp SE_T          &kp SV_Y        &kp SE_U          &kp SE_I      &kp SE_O     &kp SE_P        &kp SE_A_RING        &kp ENTER
+&trans               &kp TAB      &kp NO_Q      &kp NO_W     &kp SE_E     &kp SE_R          &kp SE_T          &kp NO_Y        &kp SE_U          &kp SE_I      &kp SE_O     &kp SE_P        &kp SE_A_RING        &kp ENTER
 &trans               &kp CAPS     &kp SE_A      &kp SE_S     &kp SE_D     &kp SE_F          &kp SE_G          &kp SE_H        &kp SE_J          &kp SE_K      &kp SE_L     &kp SE_O_SLASH  &kp SE_AE            &none
-&trans               &kp LSHFT    &kp SE_Z      &kp SV_X     &kp SE_C     &kp SE_V          &kp SE_B          &kp SE_N        &kp SE_M          &kp SE_COMMA  &kp SE_DOT   &kp SE_MINUS    &kp RSHFT            &kp UP
+&trans               &kp LSHFT    &kp SE_Z      &kp NO_X     &kp SE_C     &kp SE_V          &kp SE_B          &kp SE_N        &kp SE_M          &kp SE_COMMA  &kp SE_DOT   &kp SE_MINUS    &kp RSHFT            &kp UP
 &trans               &trans       &kp LCTRL     &kp LALT     &kp LGUI     &kp SPACE         &mo SYMBOL        &mo RAISE       &kp SPACE         &kp RGUI      &kp RALT     &kp LEFT        &kp DOWN             &kp RIGHT
             >;
         };
@@ -46,8 +47,8 @@
         symbol_layer1 {
             bindings = <
 &none        &none        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5            &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&none        &none        &none      &kp N7     &kp N8     &kp N9     &none             &none         &kp SV_LBRC   &kp SV_RBRC   &kp SE_DQT    &kp SE_SQT    &kp SE_TILDE  &none
-&none        &none        &none      &kp N4     &kp N5     &kp N6     &none             &none         &kp SE_LPAR   &kp SE_RPAR   &kp SV_LT     &kp SV_GT     &kp SE_ACUTE  &none
+&none        &none        &none      &kp N7     &kp N8     &kp N9     &none             &none         &kp NO_LBRC   &kp NO_RBRC   &kp SE_DQT    &kp SE_SQT    &kp SE_TILDE  &none
+&none        &none        &none      &kp N4     &kp N5     &kp N6     &none             &none         &kp SE_LPAR   &kp SE_RPAR   &kp NO_LT     &kp NO_GT     &kp SE_ACUTE  &none
 &none        &none        &kp N0     &kp N1     &kp N2     &kp N3     &none             &none         &kp SE_LBKT   &kp SE_RBKT   &kp SE_QMARK  &none         &kp SE_GRAVE  &none
 &none        &none        &kp LCTRL  &kp LALT   &kp LGUI   &kp SPACE  &trans            &trans        &kp SPACE     &none         &none         &none         &none         &none 
             >; 
@@ -64,9 +65,9 @@
         symbol_layer2 {
             bindings = <
 &bt BT_SEL 4        &none        &kp F1         &kp F2         &kp F3        &kp F4        &kp F5                &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&bt BT_SEL 3        &none        &kp SV_DOLLAR  &kp SV_AT      &kp SV_CARET  &kp SE_EXCL   &kp SE_PLUS           &none         &none         &none         &none         &none         &none         &none
+&bt BT_SEL 3        &none        &kp NO_DOLLAR  &kp NO_AT      &kp NO_CARET  &kp SE_EXCL   &kp SE_PLUS           &none         &none         &none         &none         &none         &none         &none
 &bt BT_SEL 2        &none        &kp SE_PERCENT &kp SE_AMPS    &kp SE_EQUAL  &kp SE_UNDER  &kp SE_MINUS          &none         &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none         &none
-&bt BT_SEL 1        &none        &kp SE_HASH    &kp SV_PIPE    &kp SE_SLASH  &kp SV_BSLH   &kp SV_STAR           &none         &none         &none         &none         &none         &none         &none
+&bt BT_SEL 1        &none        &kp SE_HASH    &kp NO_PIPE    &kp SE_SLASH  &kp NO_BSLH   &kp NO_STAR           &none         &none         &none         &none         &none         &none         &none
 &bt BT_SEL 0        &none        &kp LCTRL      &kp LALT       &kp LGUI      &kp SPACE     &trans                &trans        &kp RGUI      &kp RALT      &none         &none         &none         &none 
             >;
         };
