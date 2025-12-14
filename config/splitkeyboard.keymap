@@ -30,11 +30,11 @@
 
         default_layer {
             bindings = <
-&kp ESC              &kp NO_APOS  &kp N1        &kp NO_N2    &kp NO_N3    &kp NO_N4         &kp NO_N5         &kp NO_N6       &kp NO_N7         &kp NO_N8     &kp NO_N9    &kp NO_N0       &kp BSPC             &kp BSPC
-&trans               &kp TAB      &kp NO_Q      &kp NO_W     &kp NO_E     &kp NO_R          &kp NO_T          &kp NO_Y        &kp NO_U          &kp NO_I      &kp NO_O     &kp NO_P        &kp BSPC            &kp ENTER
-&trans               &kp CAPS     &kp NO_A      &kp NO_S     &kp NO_D     &kp NO_F          &kp NO_G          &kp NO_H        &kp NO_J          &kp NO_K      &kp NO_L     &kp NO_O_SLASH  &kp ENTER            &none
-&trans               &kp LSHFT    &kp NO_Z      &kp NO_X     &kp NO_C     &kp NO_V          &kp NO_B          &kp NO_N        &kp NO_M          &kp NO_COMMA  &kp NO_DOT   &kp NO_MINUS    &kp RSHFT            &kp UP
-&trans               &trans       &kp LCTRL     &kp LALT     &kp LGUI     &kp SPACE         &mo SYMBOL        &mo RAISE       &kp SPACE         &kp RGUI      &kp RALT     &kp LEFT        &kp DOWN             &kp RIGHT
+&kp ESC              &kp SE_APOS  &kp N1        &kp SE_N2    &kp SE_N3    &kp SE_N4         &kp SE_N5         &kp SE_N6       &kp SE_N7         &kp SE_N8     &kp SE_N9    &kp SE_N0       &kp BSPC       &kp BSPC
+&trans               &kp TAB      &kp NO_Q      &kp NO_W     &kp SE_E     &kp SE_R          &kp SE_T          &kp NO_Y        &kp SE_U          &kp SE_I      &kp SE_O     &kp SE_P        &kp BSPC       &kp ENTER
+&trans               &kp CAPS     &kp SE_A      &kp SE_S     &kp SE_D     &kp SE_F          &kp SE_G          &kp SE_H        &kp SE_J          &kp SE_K      &kp SE_L     &kp SE_O_SLASH  &kp ENTER      &none
+&trans               &kp LSHFT    &kp SE_Z      &kp NO_X     &kp SE_C     &kp SE_V          &kp SE_B          &kp SE_N        &kp SE_M          &kp SE_COMMA  &kp SE_DOT   &kp SE_MINUS    &kp RSHFT      &kp UP
+&trans               &trans       &kp LCTRL     &kp LALT     &kp LGUI     &kp SPACE         &mo SYMBOL        &mo RAISE       &kp SPACE         &kp RGUI      &kp RALT     &kp LEFT        &kp DOWN       &kp RIGHT
             >;
         };
 // ---------------------------------------------------------------------------------
