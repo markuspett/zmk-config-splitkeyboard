@@ -39,7 +39,7 @@
         };
 // ---------------------------------------------------------------------------------------------------
 // |     |      |     |     |     |     |     |        |       |     |     |     |     |      |      |
-// |     |      |     |  7  |  8  |  9  |     |        |   ~   |  {  |  }  |  "  |  '  |      |      |
+// |     | esc  |     |  7  |  8  |  9  |     |        |   ~   |  {  |  }  |  "  |  '  |      |      |
 // |     |      |     |  4  |  5  |  6  |     |        |   ´   |  (  |  )  |  <  |  >  |      |      |
 // |     |      |  0  |  1  |  2  |  3  |     |        |   `   |  [  |  ]  |  ?  |  ¨  |      |      |
 // |     |      |     |     |     |     |     |        |       |     |     |     |     |      |      |
@@ -47,7 +47,7 @@
         symbol_layer1 {
             bindings = <
 &none        &none        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5            &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&none        &none        &none      &kp N7     &kp N8     &kp N9     &none             &kp NO_TILDE  &kp NO_LBRC   &kp NO_RBRC   &kp NO_DQT    &kp NO_SQT    &trans        &none
+&none        &kp ESC      &none      &kp N7     &kp N8     &kp N9     &none             &kp NO_TILDE  &kp NO_LBRC   &kp NO_RBRC   &kp NO_DQT    &kp NO_SQT    &trans        &none
 &none        &none        &none      &kp N4     &kp N5     &kp N6     &none             &kp NO_ACUTE  &kp NO_LPAR   &kp NO_RPAR   &kp NO_LT     &kp NO_GT     &trans        &none
 &none        &none        &kp N0     &kp N1     &kp N2     &kp N3     &none             &kp NO_GRAVE  &kp NO_LBKT   &kp NO_RBKT   &kp NO_QMARK  &kp NO_UMLAUT &trans        &none
 &none        &none        &trans     &trans     &trans     &trans     &trans            &trans        &trans        &trans        &trans        &trans        &trans        &none 
