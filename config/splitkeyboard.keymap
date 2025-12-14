@@ -65,10 +65,10 @@
         symbol_layer2 {
             bindings = <
 &trans  &bt BT_SEL 4     &kp F1         &kp F2         &kp F3        &kp F4        &kp F5                &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&trans  &bt BT_SEL 3     &kp SV_DOLLAR  &kp SV_AT      &kp SV_CARET  &kp SE_EXCL   &kp SE_PLUS           &none         &none         &none         &none         &none         &none         &none
-&trans  &bt BT_SEL 2     &kp SE_PERCENT &kp SE_AMPS    &kp SE_EQUAL  &kp SE_UNDER  &kp SE_MINUS          &none         &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none         &none
-&trans  &bt BT_SEL 1     &kp SE_HASH    &kp SV_PIPE    &kp SE_SLASH  &kp SV_BSLH   &kp SV_STAR           &none         &none         &none         &none         &none         &none         &none
-&trans  &bt BT_SEL 0     &kp LCTRL      &kp LALT       &kp LGUI      &kp SPACE     &trans                &trans        &kp RGUI      &kp RALT      &none         &none         &none         &none 
+&trans  &bt BT_SEL 3     &kp NO_DOLLAR  &kp NO_AT      &kp NO_CARET  &kp NO_EXCL   &kp NO_PLUS           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &trans        &none
+&trans  &bt BT_SEL 2     &kp NO_PERCENT &kp NO_AMPS    &kp NO_EQUAL  &kp NO_UNDER  &kp NO_MINUS          &kp F6        &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &none
+&trans  &bt BT_SEL 1     &kp NO_HASH    &kp NO_PIPE    &kp NO_SLASH  &kp NO_BSLH   &kp NO_STAR           &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &trans        &none
+&trans  &bt BT_SEL 0     &trans         &trans         &trans        &trans        &trans                &trans        &trans        &trans        &trans        &kp F12       &trans        &none 
             >;
         };
     };
