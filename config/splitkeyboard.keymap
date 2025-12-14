@@ -55,20 +55,20 @@
         };
 
 // ---------------------------------------------------------------------------------
-// | bt4 |      |  f1 |  f2 |  f3 | f4  |  f5 |        |   F6  |  f7 |  f8 |  f9 |  f10| f11  | f12  |
-// | bt3 |      |  $  |  @  |  ^  |  !  |  +  |        |       |     |     |     |     |      |      |
-// | bt2 |      |  %  |  &  |  =  |  _  |  -  |        |       |LEFT |DOWN | UP  |RIGHT|      |      |
-// | bt1 |      |  #  |  |  |  /  |  \  |  *  |        |       |     |     |     |     |      |      |
-// | bt0 |      | ctrl| opt | cmd | spc |     |        |       |  spc| cmd |  opt|     |      |      |
+// |   | bt4 |  f1 |  f2 |  f3 | f4  |  f5 |        |   F6  |  f7 |  f8 |  f9 |  f10| f11  | f12  |
+// |   | bt3 |  $  |  @  |  ^  |  !  |  +  |        |       |     |     |     |     |      |      |
+// |   | bt2 |  %  |  &  |  =  |  _  |  -  |        |       |LEFT |DOWN | UP  |RIGHT|      |      |
+// |   | bt1 |  #  |  |  |  /  |  \  |  *  |        |       |     |     |     |     |      |      |
+// |   | bt0 |     |     |     |     |     |        |       |     |     |     |     |      |      |
 
 
         symbol_layer2 {
             bindings = <
-&bt BT_SEL 4        &none        &kp F1         &kp F2         &kp F3        &kp F4        &kp F5                &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-&bt BT_SEL 3        &none        &kp SV_DOLLAR  &kp SV_AT      &kp SV_CARET  &kp SE_EXCL   &kp SE_PLUS           &none         &none         &none         &none         &none         &none         &none
-&bt BT_SEL 2        &none        &kp SE_PERCENT &kp SE_AMPS    &kp SE_EQUAL  &kp SE_UNDER  &kp SE_MINUS          &none         &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none         &none
-&bt BT_SEL 1        &none        &kp SE_HASH    &kp SV_PIPE    &kp SE_SLASH  &kp SV_BSLH   &kp SV_STAR           &none         &none         &none         &none         &none         &none         &none
-&bt BT_SEL 0        &none        &kp LCTRL      &kp LALT       &kp LGUI      &kp SPACE     &trans                &trans        &kp RGUI      &kp RALT      &none         &none         &none         &none 
+&trans  &bt BT_SEL 4     &kp F1         &kp F2         &kp F3        &kp F4        &kp F5                &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+&trans  &bt BT_SEL 3     &kp SV_DOLLAR  &kp SV_AT      &kp SV_CARET  &kp SE_EXCL   &kp SE_PLUS           &none         &none         &none         &none         &none         &none         &none
+&trans  &bt BT_SEL 2     &kp SE_PERCENT &kp SE_AMPS    &kp SE_EQUAL  &kp SE_UNDER  &kp SE_MINUS          &none         &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none         &none
+&trans  &bt BT_SEL 1     &kp SE_HASH    &kp SV_PIPE    &kp SE_SLASH  &kp SV_BSLH   &kp SV_STAR           &none         &none         &none         &none         &none         &none         &none
+&trans  &bt BT_SEL 0     &kp LCTRL      &kp LALT       &kp LGUI      &kp SPACE     &trans                &trans        &kp RGUI      &kp RALT      &none         &none         &none         &none 
             >;
         };
     };
