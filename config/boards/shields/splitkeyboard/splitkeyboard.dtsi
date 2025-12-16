@@ -1,6 +1,39 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
+
+
 / {
+
+    behaviors {
+        no_o_slash_mt: no_o_slash_mt {
+            compatible = "zmk,behavior-mod-tap";
+            label = "NO_O_SLASH_MT";
+            #binding-cells = <0>;
+            bindings = <&kp NO_O_SLASH &kp NO_O>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+        };
+
+        no_a_ring_mt: no_a_ring_mt {
+            compatible = "zmk,behavior-mod-tap";
+            label = "NO_A_RING_MT";
+            #binding-cells = <0>;
+            bindings = <&kp NO_A_RING &kp NO_A>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+        };
+
+        no_ae_mt: no_ae_mt {
+            compatible = "zmk,behavior-mod-tap";
+            label = "NO_AE_MT";
+            #binding-cells = <0>;
+            bindings = <&kp NO_AE &kp NO_E>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <180>;
+        };
+    };
+
+
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
