@@ -1,8 +1,18 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-
+#include <dt-bindings/zmk/behaviors.h>
 
 
 / {
+    behaviors {
+        mtt: mod_tap_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap-Tap";
+        };
+    };
 
     chosen {
         zmk,kscan = &kscan0;
