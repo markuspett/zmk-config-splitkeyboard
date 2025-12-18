@@ -3,15 +3,7 @@
 
 
 / {
-    behaviors {
-        mt_tap_preferred: mt_tap_preferred {
-            compatible = "zmk,behavior-mod-tap";
-            label = "MT_TAP_PREF";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <180>;
-        };
-    };
+
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
